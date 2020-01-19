@@ -39,6 +39,9 @@ public class StartFragment extends Fragment {
 
         final NavController navController = Navigation.findNavController(view);
         Button startBtn = view.findViewById(R.id.startGameBtn);
+        Button aboutBtn = view.findViewById(R.id.aboutBtn);
+        Button tutorialBtn = view.findViewById(R.id.tutorialBtn);
+
 
         startBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +49,20 @@ public class StartFragment extends Fragment {
 
                 navController.navigate(R.id.action_startFragment_to_gameFragment);
 
+            }
+        });
+
+        aboutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_startFragment_to_aboutFragment);
+            }
+        });
+
+        tutorialBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_startFragment_to_tutorialFragment);
             }
         });
 

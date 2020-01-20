@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/startFragment"
         android:name="com.example.navigationcomponent.StartFragment"
-        android:label="fragment_start"
+        android:label="Home Fragment"
         tools:layout="@layout/fragment_start">
         <action
             android:id="@+id/action_startFragment_to_gameFragment"
@@ -23,7 +23,7 @@
     <fragment
         android:id="@+id/gameFragment"
         android:name="com.example.navigationcomponent.GameFragment"
-        android:label="fragment_game"
+        android:label="Game"
         tools:layout="@layout/fragment_game">
         <action
             android:id="@+id/action_gameFragment_to_endFragment"
@@ -33,7 +33,7 @@
     <fragment
         android:id="@+id/endFragment"
         android:name="com.example.navigationcomponent.EndFragment"
-        android:label="fragment_end"
+        android:label="End"
         tools:layout="@layout/fragment_end">
         <action
             android:id="@+id/action_endFragment_to_startFragment"
@@ -42,11 +42,11 @@
     <fragment
         android:id="@+id/tutorialFragment"
         android:name="com.example.navigationcomponent.TutorialFragment"
-        android:label="fragment_tutorial"
+        android:label="Tutorial"
         tools:layout="@layout/fragment_tutorial" />
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.navigationcomponent.AboutFragment"
-        android:label="fragment_about"
+        android:label="About"
         tools:layout="@layout/fragment_about" />
 </navigation>
